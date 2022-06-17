@@ -1,0 +1,142 @@
+/*=== Created by Chaitanya on 17th June,2022 ===*/
+.login-wrapper {
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    box-shadow: 20px 20px 80px rgb(206, 206, 206)
+}
+
+.login-h2 {
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #2878c3;
+}
+
+.login-h4 {
+    font-family: 'Poppins', sans-serif
+}
+
+.login-input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #2878c3;
+    color: #2878c3
+}
+
+.login-input-field:hover {
+    color: #7db9f0;
+    border: 1px solid #7db9f0
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 0px 2px;
+    font-family: 'Poppins', sans-serif
+}
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none
+}
+
+a {
+    text-decoration: none;
+    color: #2878c3;
+    font-weight: 700
+}
+
+a:hover {
+    text-decoration: none;
+    color: #7db9f0
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.login-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    background-color: rgba(107, 162, 214, 0);
+    border: 1px solid rgb(40, 120, 195);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .login-checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .login-checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.login-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .login-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .login-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn.btn-block {
+    border-radius: 20px;
+    background-color: #2878c3;
+    color: #fff
+}
+
+.btn.btn-block:hover {
+    background-color: ##7db9f0
+}
+
+@media(max-width: 575px) {
+    .login-wrapper {
+        margin: 10px
+    }
+}
+
+@media(max-width:424px) {
+    .login-wrapper {
+        padding: 30px 10px;
+        margin: 5px
+    }
+
+    #forgot {
+        font-size: 0.95rem
+    }
+}
