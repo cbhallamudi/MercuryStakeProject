@@ -17,64 +17,44 @@
         <!-- Custom styles for this template-->
         <link href="css/sb-admin-2.min.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
+        
     </head>
     <body class="bg-primary">
-        <nav class="navbar bg-gradient-primary navbar-light bg-white">
+        <nav class="navbar bg-gradient-primary navbar-light bg-white justify-content-center justify-content-lg-start">
             <a class="navbar-brand sidebar-brand" href="#">Merc</a>
            
          </nav>
-        <div id="authentication">
-            <div id="authentication_content">
-                <main>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-5">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email address</label>
-                                            </div>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                                <label for="inputPassword">Password</label>
-                                            </div>
-                                            <div class="form-check mb-3">
-                                                <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                                <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
-                                            </div>
-                                        </form>
-                                    </div>
-                                   <!--  <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
+        <div class="login-wrapper bg-white">
+            <div class="login-h2 text-center text-uppercase">Merc</div>
+            <form class="pt-3">
+                <div class="form-group py-2">
+                    <div class="login-input-field"> <span class="far fa-user p-2"></span> <input type="text" placeholder="Merc User Id / Email Id" required class=""> </div>
+                </div>
+                <div class="form-group py-1 pb-2">
+                    <div class="login-input-field"> <span class="fas fa-lock p-2"></span> 
+                        <input type="password" placeholder="Enter your Password" required class="" id="loginPwd"> 
+                        <span class="btn bg-white text-muted"> 
+                            <span class="far fa-eye-slash"></span> 
+                        </span> 
                     </div>
-                </main>
-            </div>
-            <div id="authentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Mercury 2022</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <div class="remember"> 
+                        <label class="container position-relative">
+                            <span class="mx-2">
+                                Remember Me
+                            </span>
+                          <input type="checkbox">
+                          <span class="login-checkmark"></span>
+                        </label> 
                     </div>
-                </footer>
-            </div>
+                    <div class="ml-auto"> <a href="#" id="forgot">Forgot Password?</a> </div>
+                </div> 
+                <input class="btn btn-block text-center my-3" value="Log in" type="submit">
+                <div class="text-center pt-3 text-muted">Not a member? <a href="#">Sign up</a></div>
+            </form>
         </div>
+
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -84,5 +64,7 @@
 
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin-2.min.js"></script>
+        <script src="js/index.js"></script>
+
     </body>
 </html>

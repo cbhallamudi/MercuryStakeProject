@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 7 version
+*/
+
 /*=== Created by Chaitanya on 17th June,2022 ===*/
 .login-wrapper {
     max-width: 500px;
     border-radius: 10px;
     margin: 50px auto;
     padding: 30px 40px;
-    box-shadow: 20px 20px 80px rgb(206, 206, 206)
+    -webkit-box-shadow: 20px 20px 80px rgb(206, 206, 206);
+            box-shadow: 20px 20px 80px rgb(206, 206, 206)
 }
 
 .login-h2 {
@@ -21,8 +29,12 @@
 .login-input-field {
     border-radius: 5px;
     padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
     border: 1px solid #2878c3;
     color: #2878c3
@@ -36,7 +48,8 @@
 input {
     border: none;
     outline: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     width: 100%;
     padding: 0px 2px;
     font-family: 'Poppins', sans-serif
@@ -45,7 +58,8 @@ input {
 .fa-eye-slash.btn {
     border: none;
     outline: none;
-    box-shadow: none
+    -webkit-box-shadow: none;
+            box-shadow: none
 }
 
 a {
