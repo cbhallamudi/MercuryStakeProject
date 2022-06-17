@@ -1,0 +1,98 @@
+
+/***************** Custom CSS *******************/
+
+#wrapper #content-wrapper {
+  background-color: inherit !important;
+}
+
+body  {
+/* background-image: linear-gradient(to bottom, #224abe ,#224abe  50%, white 50%); */
+background-image: linear-gradient(to bottom, #2676c1 ,#2878c3 50%, white 50%);
+background-attachment:fixed;
+background-repeat: no-repeat;
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(180deg,#4e9edf 10%,#2272be 100%);
+}
+
+.sidebar-brand {
+  height: 1.375rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  z-index: 1;
+  color: #fff !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #fff;
+  border-bottom: solid 1px #1cc88a;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #f5f5f5;
+}
+
+.container-fluid{
+  padding-top: 20px;
+  width: 90%;
+}
+
+.rowContent{
+  border: solid 1px #edf0f7;
+  margin: 20px 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.rowContent2{
+  border: solid 1px #edf0f7;
+  margin: 20px 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.m-t-10{
+  margin-top: 10px;
+}
+.fw-700{
+  font-weight: 700;
+}
+
+.m-r-100{
+  margin-right: 100px;
+}
+
+
+
+
+
+  .text-light-blue{
+    color: #bbcaf4!important;
+  }
+  .bg-blue2{
+    background-color: #dde4f8;
+  }
+
+  .br-10{
+    border-radius: 10px;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+      background-color: rgb(221 228 248);
+  }
+  .table td, .table th {
+      border-top: 0;
+  }
+
+  /* .dropdown-menu.show {
+      margin-left: -70px;
+  } */
+
+  .connectForm{
+    margin: 25px;
+  }
